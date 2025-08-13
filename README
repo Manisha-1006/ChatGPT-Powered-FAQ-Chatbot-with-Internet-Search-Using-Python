@@ -1,0 +1,88 @@
+# FAQ Assistant Chatbot
+
+## Overview
+
+This is a modern full-stack chat application built as an FAQ assistant powered by AI. The application provides an interactive chatbot interface that can answer common questions, search the web for current information, and provide detailed support responses. It features a pure HTML/JavaScript frontend with Tailwind CSS and a Python Flask backend with AI integration.
+
+**Recent Migration (August 13, 2025)**: Successfully migrated from Node.js/React stack to Python Flask with vanilla HTML/JavaScript frontend for improved simplicity and maintainability.
+
+## User Preferences
+
+Preferred communication style: Simple, everyday language.
+
+## System Architecture
+
+### Frontend Architecture
+- **Framework**: Pure HTML/JavaScript with modern ES6+ features
+- **UI Framework**: Tailwind CSS with CDN integration for rapid styling
+- **Icons**: Lucide Icons for consistent visual elements
+- **Styling**: Custom CSS animations and responsive design patterns
+- **State Management**: Vanilla JavaScript with DOM manipulation
+- **API Communication**: Fetch API with async/await patterns
+
+### Backend Architecture
+- **Runtime**: Python 3.11 with Flask web framework
+- **Language**: Python with type hints and dataclasses
+- **API Design**: RESTful API with structured error handling and CORS support
+- **Development**: Flask development server with debug mode and auto-reload
+
+### Data Storage Solutions
+- **Database**: PostgreSQL with Drizzle ORM for type-safe database operations
+- **Database Provider**: Neon serverless PostgreSQL
+- **Schema Management**: Drizzle migrations with shared schema definitions
+- **In-Memory Storage**: Fallback storage implementation for development/testing
+
+### Authentication and Authorization
+- **Session Management**: PostgreSQL-backed sessions using connect-pg-simple
+- **Security**: CORS configuration and request validation
+
+### External Service Integrations
+- **AI Service**: OpenAI GPT-4o for chat completions and response generation
+- **Search Integration**: Google Custom Search API for web search capabilities
+- **Search Strategy**: Intelligent decision-making for when to perform web searches vs. using cached knowledge
+
+### Key Design Patterns
+- **Monorepo Structure**: Client, server, and shared code organized in separate directories
+- **Type Safety**: End-to-end TypeScript with shared schema definitions
+- **Component Architecture**: Modular React components with clear separation of concerns
+- **API Layer**: Centralized HTTP client with error handling and retry logic
+- **Responsive Design**: Mobile-first approach with adaptive layouts
+
+### Development Features
+- **Hot Reloading**: Vite development server with Express middleware
+- **Error Handling**: Runtime error overlay and comprehensive error boundaries
+- **Code Quality**: Consistent code formatting and TypeScript strict mode
+- **Build System**: Optimized production builds with ESBuild bundling
+
+## External Dependencies
+
+### Core Technologies
+- **React**: Frontend framework with hooks and functional components
+- **Express.js**: Backend web framework
+- **TypeScript**: Type safety across the entire stack
+- **Vite**: Build tool and development server
+
+### Database and ORM
+- **PostgreSQL**: Primary database (Neon serverless)
+- **Drizzle ORM**: Type-safe database operations
+- **Drizzle Kit**: Database migrations and schema management
+
+### AI and Search Services
+- **OpenAI**: GPT-4o model for chat completions
+- **Google Custom Search API**: Web search capabilities
+
+### UI and Styling
+- **Tailwind CSS**: Utility-first CSS framework
+- **Radix UI**: Unstyled, accessible UI primitives
+- **Lucide React**: Icon library
+- **shadcn/ui**: Pre-built component library
+
+### State and Data Management
+- **TanStack Query**: Server state management and caching
+- **React Hook Form**: Form state management
+- **Zod**: Runtime type validation
+
+### Development Tools
+- **Replit**: Development environment integration
+- **PostCSS**: CSS processing with Autoprefixer
+- **ESBuild**: Fast JavaScript bundler for production
