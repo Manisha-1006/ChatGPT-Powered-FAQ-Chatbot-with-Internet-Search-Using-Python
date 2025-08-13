@@ -1,0 +1,7 @@
+flask
+langchain
+langchain_community
+openai
+google-search-results
+python-dotenv
+gunicorn
